@@ -8,6 +8,7 @@ RUN apk add --update --virtual .build-deps \
         fluent-plugin-scalyr \
         fluent-plugin-s3 \
         fluent-plugin-grok-parser \
+        fluent-plugin-rewrite-tag-filter \
  && sudo gem sources --clear-all \
  && apk del .build-deps \
  && rm -rf /var/cache/apk/* \
