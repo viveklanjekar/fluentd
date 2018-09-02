@@ -6,6 +6,7 @@ RUN apk add --update --virtual .build-deps \
  && sudo gem install \
         fluent-plugin-elasticsearch \
         fluent-plugin-scalyr \
+        fluent-plugin-sumologic_output \
         fluent-plugin-s3 \
  && sudo gem sources --clear-all \
  && apk del .build-deps \
