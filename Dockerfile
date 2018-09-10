@@ -7,6 +7,7 @@ RUN apk add --update --virtual .build-deps \
         fluent-plugin-elasticsearch \
         fluent-plugin-scalyr \
         fluent-plugin-s3 \
+        fluent-plugin-kafka \
  && sudo gem sources --clear-all \
  && apk del .build-deps \
  && rm -rf /var/cache/apk/* \
