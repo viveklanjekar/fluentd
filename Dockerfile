@@ -10,6 +10,7 @@ RUN apk add --update --virtual .build-deps \
         fluent-plugin-kafka \
         fluent-plugin-grok-parser \
         fluent-plugin-rewrite-tag-filter \
+        fluent-plugin-record-reformer \
  && sudo gem sources --clear-all \
  && apk del .build-deps \
  && rm -rf /var/cache/apk/* \
