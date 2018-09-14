@@ -11,6 +11,7 @@ RUN apk add --update --virtual .build-deps \
         fluent-plugin-grok-parser \
         fluent-plugin-rewrite-tag-filter \
         fluent-plugin-record-reformer \
+        fluent-plugin-throttle \
  && sudo gem sources --clear-all \
  && apk del .build-deps \
  && rm -rf /var/cache/apk/* \
