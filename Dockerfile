@@ -7,7 +7,12 @@ RUN apk add --no-cache --update --virtual .build-deps \
         sudo build-base ruby-dev \
  && sudo gem install \
         fluent-plugin-elasticsearch \
+        fluent-plugin-scalyr \
+        fluent-plugin-s3 \
         fluent-plugin-kafka \
+        fluent-plugin-rewrite-tag-filter \
+        fluent-plugin-record-reformer \
+        fluent-plugin-multi-format-parser \
  && sudo gem sources --clear-all \
  && apk del .build-deps \
  && rm -rf /home/fluent/.gem/ruby/2.5.0/cache/*.gem
