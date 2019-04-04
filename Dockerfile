@@ -12,6 +12,7 @@ RUN apk add --no-cache --update --virtual .build-deps \
         fluent-plugin-kafka \
         fluent-plugin-rewrite-tag-filter \
         fluent-plugin-record-reformer \
+        fluent-plugin-detect-exceptions \
         fluent-plugin-multi-format-parser \
  && sudo gem sources --clear-all \
  && apk del .build-deps \
