@@ -13,6 +13,7 @@ RUN apk add --update --virtual .build-deps \
         fluent-plugin-record-reformer \
         fluent-plugin-throttle \
         fluent-plugin-detect-exceptions \
+        fluent-plugin-azure-storage-append-blob \
         fluent-plugin-multi-format-parser \
  && sudo gem sources --clear-all \
  && apk del .build-deps \
